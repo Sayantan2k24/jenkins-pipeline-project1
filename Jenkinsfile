@@ -10,9 +10,9 @@ stages {
 		}
 	}
 
-	stage('Deploy'){
+	stage('Build'){
 		steps {
-			echo "deploy my code"
+			sh 'mvn clean package'
 		}
 	}
 
