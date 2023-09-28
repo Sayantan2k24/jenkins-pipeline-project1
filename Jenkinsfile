@@ -1,6 +1,6 @@
 pipeline {
 
-agent linux-slave-1
+agent { label 'linuxbuildnode' }
 
 stages {
 	stage('SCM') {
